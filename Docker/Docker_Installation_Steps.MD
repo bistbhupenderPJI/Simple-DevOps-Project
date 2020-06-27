@@ -19,6 +19,7 @@
    useradd dockeradmin
    passwd dockeradmin
    ```
+        //to check ther is docker cat /etc/group 
 1. add a user to docker group to manage docker 
    ```
    usermod -aG docker dockeradmin
