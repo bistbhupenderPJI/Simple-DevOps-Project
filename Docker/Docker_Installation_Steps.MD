@@ -19,11 +19,12 @@
    useradd dockeradmin
    passwd dockeradmin
    ```
-        //to check ther is docker cat /etc/group 
+        //to check ther is docker group, run command: cat /etc/group 
 1. add a user to docker group to manage docker 
    ```
    usermod -aG docker dockeradmin
    ```
+   // to check run command: id dockeradmin
 ### Validation test
 1. Create a tomcat docker container by pulling a docker image from the public docker registry
    ```sh
