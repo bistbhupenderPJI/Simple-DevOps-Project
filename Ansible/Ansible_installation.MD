@@ -82,3 +82,12 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    ```sh  
    ansible all -m ping
    ```
+
+### Trouble Shooting
+
+Troubleshooting: Unable to install Ansible
+If you are unable to install ansible with "yum install ansible", Please make sure you have installed python first.
+
+then try below command.
+
+sudo amazon-linux-extras install ansible2
