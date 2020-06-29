@@ -91,3 +91,8 @@ If you are unable to install ansible with "yum install ansible", Please make sur
 then try below command.
 
 sudo amazon-linux-extras install ansible2
+
+### Integrate ansible with jenkins
+
+1) Manage Jenkins-> Configure System-> publish over ssh->
+   Add SSH server-> 
