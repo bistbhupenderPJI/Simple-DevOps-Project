@@ -54,6 +54,8 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    # Enable EC2 uses keys for remote acces
    vi /etc/ssh/sshd_config
    Change PasswordAuthentication Yes
+   
+   service sshd relaod
 
    ```
 1. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it. 
