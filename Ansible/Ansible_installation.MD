@@ -56,6 +56,21 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    Change PasswordAuthentication Yes
    
    service sshd relaod
+   
+   #Create ssh keys for ansadmin
+   su - ansadmin
+   ssh-keygen
+   
+   #to check the kyes
+   cd .ssh
+   ls -l  /* id_rsa id_rsa.pub */  /* public key(id_rsa.pub) we should copy to target env. and private key (id_rsa) we should keep it secure.*/
+   
+   #Copy the keys to docker host system.
+   ssh-copy-id ansadmin@[dockhostip]
+   
+   #to check you should connected to docker host and then exit
+   ssh ansadmin@[dockhostip]
+   
 
    ```
 1. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it. 
