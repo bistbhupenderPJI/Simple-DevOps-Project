@@ -77,6 +77,7 @@
     ```sh
      kops delete cluster demo.k8s.valaxy.net --yes
     ```
+    #need to make sure to delete auto scaling group(it will delete EC2 instance automatically), launch congiuration under (EC2 Auto scaling conguration) and VPC, Route 53 and S3 Buckets
    
 #### Deploying Nginx pods on Kubernetes
 1. Deploying Nginx Container
